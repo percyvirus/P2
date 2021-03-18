@@ -12,12 +12,11 @@ const char *state2str(VAD_STATE st);
    (counts, thresholds, etc.) */
 
 typedef struct {
+   float k0, alfa0;
   VAD_STATE state;
   float sampling_rate;
   unsigned int frame_length;
   float last_feature; /* for debuggin purposes */
-  float k0;
-  float alfa0;
 } VAD_DATA;
 
 /* Call this function before using VAD: 
