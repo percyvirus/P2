@@ -5,7 +5,8 @@
 
 # Write here the name and path of your program and database
 DB=$HOME/PAV/P2/db.v4
-CMD="bin/vad --alfa0=5"
+CMD="bin/vad --alfa0=6"
+
 
 for filewav in $DB/*/*wav; do
 #    echo
