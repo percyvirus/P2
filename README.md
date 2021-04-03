@@ -133,16 +133,18 @@ Ejercicios
 
 - Complete el código de los ficheros de la práctica para implementar un detector de actividad vocal tan
   exacto como sea posible. Tome como objetivo la maximización de la puntuación-F `TOTAL`.
+		+ Hemos completado y comentado el código vad.c
 
 - Inserte una gráfica en la que se vea con claridad la señal temporal, el etiquetado manual y la detección
   automática conseguida para el fichero grabado al efecto. 
-
+	<img src="img/Imagen2.png" width="640" align="center">
 
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a 
   continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo
   el resumen).
+	<img src="img/Imagen3.png" width="640" align="center">
 
 
 ### Trabajos de ampliación
