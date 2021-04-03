@@ -9,7 +9,9 @@ Options:
    -i FILE, --input-wav=FILE   WAVE file for voice activity detection
    -o FILE, --output-vad=FILE  Label file with the result of VAD
    -w FILE, --output-wav=FILE  WAVE file with silences cleared
-   -0 FLOAT, --alfa0=float     Mergen en dB para k0 [default: 10]
+   -1 FLOAT, --alfa1=FLOAT     Margen en dB para k1 [default: 4]
+   -2 FLOAT, --alfa2=FLOAT     Margen en dB para k2 [default: 10]
+   -n INT,   --N_init=INT      Numero de muestras iniciales [default: 10]
    -v, --verbose  Show debug information
    -h, --help     Show this screen
    --version      Show the version of the project
