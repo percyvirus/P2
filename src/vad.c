@@ -19,7 +19,7 @@ const int alfa2 = 10; // Margen k2 = k0 + alfa2
  */
 
 const char *state_str[] = {
-  "UNDEF", "S", "V", "INIT"
+  "UNDEF", "S", "V", "INIT", "MS", "MV"
 };
 
 const char *state2str(VAD_STATE st) {
@@ -79,7 +79,13 @@ VAD_STATE vad_close(VAD_DATA *vad_data) {
   /* 
    * TODO: decide what to do with the last undecided frames
    */
-  VAD_STATE state = vad_data->state;
+  VAD_STATE state;
+  if (vad_data->state==ST_MAYBEVOICE)
+    state=ST_VOICE;
+  else if(vad_data->state==ST_MAYBESILENCE)
+    state=ST_SILENCE;
+  else 
+    state=vad_data->state;
 
   free(vad_data);
   return state;
@@ -191,13 +197,15 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
   vad_data->nsamples += 1;
 
   if (vad_data->state == ST_SILENCE ||
-      vad_data->state == ST_VOICE){
+      vad_data->state == ST_VOICE ||
+      vad_data->state == ST_MAYBEVOICE ||
+      vad_data->state == ST_MAYBESILENCE){
     return vad_data->state;
   }else if (vad_data->state == ST_INIT){
     return ST_SILENCE;
   }
   else{
-    return vad_data->last_state;
+    return ST_UNDEF;
   }
 }
 
