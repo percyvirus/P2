@@ -138,15 +138,16 @@ Ejercicios
 - Explique, si existen. las discrepancias entre el etiquetado manual y la detección automática.
 	> Podemos ver que si que existen discrepancias entre los dos etiquetados, principalmetne porque en la detección automática teniamos solamente 9 etiquetas, mientras que en el etiquetado manual obtenemos 13 etiquetas.
 	> Después de analizar las discrepancias escuchando el archivo de audio, hemos concluido que nos salen más etiquetados debido a que en nuestro archivo de audio hay un ruido de fondo constante que provoca que en los tramos de silencio que la detección automática detecta, con nuestro detector, nos aparece un tramo sonoro y luego vuelve a pasar a ser un tramo sordo. 
+	>Por otra parte, el detector automático no detecta el último tramo sonoro, mientras que con nuestro etiquetado manual si que hemos conseguido detectarlo.
+	> En nuestro detector, también observamos que somos más precisos a la hora de pasar de un tramo sordo a un tramo sonoro; en cambio, a la hora de detectar los cambios de un tramo sordo a un tramo sonoro, el etiquetado manual lo alarga un poco más, lo hemos hecho así para asegurar la detección completa. 
 	> A través de los umbrales, hemos intentado arreglar este error, pero no lo hemos conseguido, pese a ello después de ajustar los umbrales de decisión, conseguimos un 95.556% de detección.
 
 	<img src="img/Imagen3.png" width="640" align="center">
 
 - Evalúe los resultados sobre la base de datos `db.v4` con el script `vad_evaluation.pl` e inserte a continuación las tasas de sensibilidad (*recall*) y precisión para el conjunto de la base de datos (sólo el resumen).
+	>Observamos que tenemos un 88,907% de precisión de detección vocal. Podemos ver, tal y como hemos comentado antes, que tenemos más precisión a la hora de detectar tramos de voz (91,29%) que a la hora de detectar tramos de silencio.
+
     <img src="img/Imagen4.png" width="640" align="center">
-
-
-	
 
 
 ### Trabajos de ampliación
