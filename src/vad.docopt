@@ -6,13 +6,14 @@ Usage:
    vad --version
 
 Options:
-   -i FILE, --input-wav=FILE                   WAVE file for voice activity detection
-   -o FILE, --output-vad=FILE                  Label file with the result of VAD
-   -w FILE, --output-wav=FILE                  WAVE file with silences cleared
-   -1 FLOAT, --alfa1=FLOAT                     Margen en dB para k1 [default: 4]
-   -2 FLOAT, --alfa2=FLOAT                     Margen en dB para k2 [default: 10]
-   -n INT,   --N_init=INT                      Numero de muestras iniciales [default: 10]
-   -t INT,   --TRAMAS_VOZ_NO_DECIDIDAS=INT     Numero de tramas de voz no decididas [default: 1]
+   -i FILE, --input-wav=FILE                       WAVE file for voice activity detection
+   -o FILE, --output-vad=FILE                      Label file with the result of VAD
+   -w FILE, --output-wav=FILE                      WAVE file with silences cleared
+   -1 FLOAT, --alfa1=FLOAT                         Marge k1 [default: 4]
+   -2 FLOAT, --alfa2=FLOAT                         Marge k2 [default: 10]
+   -n INT,   --N_init=INT                          Numero de mostres inicials [default: 10]
+   -t INT,   --TRAMES_VEU_NO_DECIDIDES=INT         Numero de trames de veu no decidides [default: 1]
+   -s INT,   --TRAMES_SILENCI_NO_DECIDIDES=INT     Numero de trames de silenci no decidides [default: 11]
    -v, --verbose  Show debug information
    -h, --help     Show this screen
    --version      Show the version of the project
