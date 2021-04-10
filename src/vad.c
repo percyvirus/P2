@@ -168,7 +168,7 @@ VAD_STATE vad(VAD_DATA *vad_data, float *x) {
     return ST_SILENCE;  //Considerem que els primers segments de la senyal son sempre silenci
   }
   else{
-    return vad_data->last_state;  //Si l'estat es ST_UNDEF retornem l'últim estat en el que estavem vàlid (V o S)
+    return ST_UNDEF;  //Si l'estat es ST_UNDEF retornem l'últim estat en el que estavem vàlid (V o S)
   }
 }
 
