@@ -165,7 +165,7 @@ Ejercicios
 
    > La 
 
-  <img src="img/Imagen5.png" width="640" align="center">
+  <img src="img/Imagen7.png" width="640" align="center">
 
 
 ### Contribuciones adicionales y/o comentarios acerca de la práctica
