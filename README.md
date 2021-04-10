@@ -154,6 +154,10 @@ Ejercicios
   la que se vea con claridad la señal antes y después de la cancelación (puede que `wavesurfer` no sea la
   mejor opción para esto, ya que no es capaz de visualizar varias señales al mismo tiempo).
 
+  > La imagen superior muestra la señal original y la imagen inferior muestra la señal despues de haberle aplicaco el algoritmo para la cancelación de los segmentos de silencio. Podemos ver como hemos conseguido una gran mejora de la señal ya que hemos eliminado el ruido de fondo que teniamos en nuestra señal original.
+
+    <img src="img/Imagen6.png" width="640" align="center">
+
 #### Gestión de las opciones del programa usando `docopt_c`
 
 - Si ha usado `docopt_c` para realizar la gestión de las opciones y argumentos del programa `vad`, inserte

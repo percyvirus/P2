@@ -12,8 +12,8 @@ Options:
    -1 FLOAT, --alfa1=FLOAT                         Marge k1 [default: 4]
    -2 FLOAT, --alfa2=FLOAT                         Marge k2 [default: 10]
    -n INT,   --N_init=INT                          Numero de mostres inicials [default: 10]
-   -t INT,   --TRAMES_VEU_NO_DECIDIDES=INT         Numero de trames de veu no decidides [default: 1]
-   -s INT,   --TRAMES_SILENCI_NO_DECIDIDES=INT     Numero de trames de silenci no decidides [default: 11]
+   --TRAMES_VEU_NO_DECIDIDES=INT         Numero de trames de veu no decidides [default: 1]
+   --TRAMES_SILENCI_NO_DECIDIDES=INT     Numero de trames de silenci no decidides [default: 11]
    -v, --verbose  Show debug information
    -h, --help     Show this screen
    --version      Show the version of the project
